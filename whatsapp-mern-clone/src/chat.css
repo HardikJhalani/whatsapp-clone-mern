@@ -1,0 +1,11 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 0.7;
+}
+
+@media (max-width: 768px) {
+    .chat {
+        flex: 0.5;
+    }
+}

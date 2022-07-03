@@ -1,0 +1,30 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        flex: 0.5;
+    }
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+}
+
+.sidebar-header-right {
+    min-width: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header-right>.MuiSvgIcon-root {
+    margin-right: 2vw;
+    font-size: 24px !important;
+}
