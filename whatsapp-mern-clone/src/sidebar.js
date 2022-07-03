@@ -4,7 +4,9 @@ import ChatIcon from "@mui/icons-material/Chat";
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SearchIcon from "@mui/icons-material/Search";
-import { Avatar, Icon, IconButton } from "@mui/material";
+import ArchiveIcon from "@mui/icons-material/Archive";
+import { Avatar, IconButton } from "@mui/material";
+import Sidebar_chat from "./sidebar_chat";
 
 function Sidebar() {
   return (
@@ -35,6 +37,25 @@ function Sidebar() {
           <SearchIcon />
           <input type="text" placeholder="Search or start a new chat" />
         </div>
+      </div>
+
+      <div className="archive-bar">
+        <div className="archive-btn">
+          <ArchiveIcon />
+        </div>
+        <div className="text-content">
+          <h4>Archived</h4>
+        </div>
+      </div>
+
+      <div className="sidebar-chats">
+        <Sidebar_chat />
+        <Sidebar_chat />
+        <Sidebar_chat />
+        <Sidebar_chat />
+        <Sidebar_chat />
+        <Sidebar_chat />
+        <Sidebar_chat />
       </div>
     </div>
   );

@@ -39,8 +39,9 @@
     display: flex;
     align-items: center;
     background-color: #f6f6f6;
-    height: 39px;
+    height: 42px;
     padding: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
 .sidebar-search-container {
@@ -62,4 +63,36 @@
     border: none;
     outline: none;
     font-size: 15px;
+}
+
+.archive-bar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #f6f6f6;
+}
+
+.archive-btn {
+    height: 50px;
+    flex: 0.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.archive-btn>.MuiSvgIcon-root {
+    color: #00A884;
+    cursor: pointer;
+}
+
+.text-content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex: 0.85;
+    border-bottom: 1px solid lightgray;
+}
+
+.text-content h4 {
+    font-weight: 400;
 }
