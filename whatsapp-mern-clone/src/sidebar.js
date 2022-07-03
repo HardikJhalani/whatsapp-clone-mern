@@ -3,13 +3,18 @@ import "./sidebar.css";
 import ChatIcon from "@mui/icons-material/Chat";
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { Avatar, IconButton } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import { Avatar, Icon, IconButton } from "@mui/material";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <Avatar src="https://pps.whatsapp.net/v/t61.24694-24/217815176_741784190114712_6986526512662673842_n.jpg?ccb=11-4&oh=b8c701e148608d68893987469a8d7982&oe=62D051F4" />
+        <div className="sidebar-header-left">
+          <Avatar src="https://pps.whatsapp.net/v/t61.24694-24/217815176_741784190114712_6986526512662673842_n.jpg?ccb=11-4&oh=b8c701e148608d68893987469a8d7982&oe=62D051F4" />
+        </div>
+
+        <div className="sidebar-header-left"></div>
         <div className="sidebar-header-right">
           <IconButton>
             <DonutLargeIcon />
@@ -22,6 +27,13 @@ function Sidebar() {
           <IconButton>
             <MoreVertIcon />
           </IconButton>
+        </div>
+      </div>
+
+      <div className="sidebar-search">
+        <div className="sidebar-search-container">
+          <SearchIcon />
+          <input type="text" placeholder="Search or start a new chat" />
         </div>
       </div>
     </div>
